@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Transporte Qgis intermedio</title>
+
+		<meta name="description" content="Transporte Qgis intermedio">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-asphalt-orange">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="06ff0774505edc3f526f2f9fb3ce7656"><section data-id="a1b306b1b75a1b8caea5c45f15ab0c6c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 238px; height: auto;" data-block-id="a22b3bf579b364cafa227ae66c991a9b"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text">
+<h1>Curso Intermedio</h1>
+
+<h1>QGIS</h1>
+</div></div></section><section data-id="b52aa97448725efa3f41d414656b7587"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="e7143fcebfed894fc40fa14d6f528ba0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Malena Libman</h1>
+
+<p>malena.libman@gmail.com</p>
+</div></div></section></section><section class="stack" data-id="475b1449d6b3b376484a0cf7b2da5ab1"><section data-id="1d334dc04c39de7a395c1e0899dfe6c1"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 189px; height: auto;" data-block-id="0eb97a95bdd3bcfa3f10b863fc71d807"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Repaso</h1>
+</div></div></section><section data-id="e590330afb12f27d8a63460db9090cbb"><div class="sl-block" data-block-type="text" style="width: 806px; left: 62px; top: 22px; height: auto;" data-block-id="97aa9631c231439457f8ca7581930480"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 11;">
+<h1>Fuentes de datos</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="91306e99ac5402b4b74f28128c924d58" style="min-width: 4px; min-height: 4px; width: 806px; height: 210px; left: 76px; top: 130px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="1181" data-natural-height="308" data-lazy-loaded="" data-src="qgis2/69358f580ede326e7de3f45ecc9026df.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="667e60564364fd8887a981f72c4bcf6a" style="min-width: 4px; min-height: 4px; width: 806px; height: 105px; left: 76px; top: 349px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="962" data-natural-height="125" data-lazy-loaded="" data-src="qgis2/317fa6b3381b4803def5f500e25680d8.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6c80cadc7d47705a37793e257ab95a91" style="min-width: 4px; min-height: 4px; width: 806px; height: 207px; left: 76px; top: 472px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="1648" data-natural-height="423" data-lazy-loaded="" data-src="qgis2/da09afaa9c990af171eee200efc7c747.png"></div></div></section></section><section class="stack" data-id="3a7c5e5ce94e90ea54daa8a8a3656389"><section data-id="79ec9c4134e04ce1feb4ebf365276b22"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="24df4c21ea2a133631561ce50b4d398a"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Clase 1</h1>
+</div></div></section><section data-id="cdcceae1ccad58821befd7dec4eb4242"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 17px; height: auto;" data-block-id="57b258abc18e5777e4ffc9810d9633d2"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>vamos a preparar todo!</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 121px; height: auto;" data-block-id="1dec7a675950a486b69285cf03d1d536"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li class="visible" style="color:rgb(255, 255, 255); font-size:26.4px">
+	<p>crear proyecto con las capas: </p>
+
+	<ul>
+		<li class="fragment" data-fragment-index="0">
+		<p>escuelas, filtrado por niveles inicial y primario</p>
+		</li>
+		<li class="fragment" data-fragment-index="1">
+		<p>espacios verdes, filtrar los que no sean plazas y parques</p>
+		</li>
+		<li class="fragment" data-fragment-index="2">
+		<p>paradas de colectivos</p>
+		</li>
+		<li class="fragment" data-fragment-index="3">
+		<p>radios</p>
+		</li>
+		<li class="fragment" data-fragment-index="4">
+		<p>departamentos por provincia</p>
+		</li>
+		<li class="fragment" data-fragment-index="5">
+		<p>provincias</p>
+		</li>
+		<li class="fragment" data-fragment-index="6">
+		<p>calles</p>
+		</li>
+		<li class="fragment" data-fragment-index="7">
+		<p>corrientes de agua</p>
+		</li>
+	</ul>
+	</li>
+	<li class="fragment" style="color:rgb(255, 255, 255); font-size:26.4px" data-fragment-index="8">
+	<p>armar un grupo de capas</p>
+	</li>
+	<li class="fragment" style="color:rgb(255, 255, 255); font-size:26.4px" data-fragment-index="9">
+	<p>darle un estilo a las capas y títulos para que sea legible</p>
+	</li>
+</ul>
+</div></div></section><section data-id="fb6dad5d2369bb95f997598880f328e5"><div class="sl-block" data-block-type="text" style="width: 806px; left: 54px; top: 22px; height: auto;" data-block-id="606c4267c9111d78ede09b0b1c251bca"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>TIPS</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 89px; top: 148px; height: auto;" data-block-id="18cbb2fd284ae880a9ea5cf9d3cc775c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Subtitle" style="z-index: 11;">
+<ol>
+	<li class="fragment" data-fragment-index="0">
+	<p>en configuracion de geoprocesos, no filtrar geometrias no validas</p>
+	</li>
+	<li class="fragment" data-fragment-index="1">
+	<p>las capas de GCBA están en una proyección plana personalizada con el punto de referencia en la plaza de Flores</p>
+	</li>
+	<li class="fragment" data-fragment-index="2">
+	<p>las capas temporales no se guardan en el proyecto</p>
+	</li>
+	<li class="fragment" data-fragment-index="3">
+	<p>al dividir capas, no usar la opción temporal, porque es dificil encontrar las capas</p>
+	</li>
+</ol>
+</div></div></section><section data-id="2496aacb5abd892ea77603f6438f18a4"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 9px; height: auto;" data-block-id="3c1c8132d76c7e1a3e676aae9db003af"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Análisis espacial</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 910px; left: 37px; top: 596px; height: auto;" data-block-id="2e56151ade4d1a53136ba665bc6146d1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p><span style="font-size:1.0em">buffer &gt; Realizar un área de influencia de <strong>escuelas</strong> y <strong>espacios verdes</strong></span></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 660px; left: 150px; top: 83px;" data-block-id="1c212aa63eb13bfd104cfe3f2166649d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 93%;">
+<blockquote>
+<p>Un buffer es una herramienta de análisis vectorial que permite generar una capa poligonal a partir<br>
+de un radio de extensión establecida, es decir que dibuja un área a partir de una distancia dada. En<br>
+herramientas tipo CAD esta herramienta es conocida como “offset” o “equidistancia”.</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="753d02f0f7b2d54a057f4e9eaab94237" style="min-width: 4px; min-height: 4px; width: 366px; height: 239px; left: 300px; top: 321px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="366" data-natural-height="239" style="" data-lazy-loaded="" data-src="qgis2/7cfc209ee5dae5dcba2c272e249e399b.png"></div></div></section><section data-id="1984cba55035beef8b7a650efe02274b"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 10px; height: auto;" data-block-id="339808a6b779f4c7506eb5cbac4ef497"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Análisis espacial</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: -3px; top: 608px; height: auto;" data-block-id="10100a9a9e7a5a4ff400ac1771a9ae07"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li class="fragment" data-fragment-index="0" style="color:rgb(255, 255, 255); font-size:26.4px">
+	<p><span style="font-size:1.0em">intersección &gt; Seleccionar las áreas de influencia entre <strong>escuelas</strong> y <strong>plazas</strong></span></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 187px; top: 84px;" data-block-id="1e7361af74eaaa1ecb4bf5c8da5d800a"><div class="sl-block-style" style="z-index: 13; opacity: 0.77;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 94%;">
+<blockquote>
+<p>La intersección de capas supone que tenemos dos capas poligonales que se superponen. El concepto<br>
+detrás de la intersección reside en seleccionar y recortar aquellas áreas comunes a dos capas al<br>
+mismo tiempo. Asimismo la intersección contendrá datos de tabla comunes a ambos conjuntos.</p>
+</blockquote>
+</div></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="16cd2f314c1e62b2487bb8b11e7daf25" style="min-width: 4px; min-height: 4px; width: 376px; height: 196px; left: 292px; top: 381px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="726" data-natural-height="379" data-lazy-loaded="" data-src="qgis2/3df8a62bd9e5fa66fec28f7d26f7b8dd.png"></div></div></section><section data-id="72b3996f04a262a3fd8ffdfefad387b4"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 12px; height: auto;" data-block-id="d1ab6ba474f30743bc7fda7cdef56a4c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Análisis espacial</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 630px; height: auto;" data-block-id="9e6b16181429ddd133b88d83ff38884f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li class="fragment" data-fragment-index="0" style="color:rgb(255, 255, 255); font-size:26.4px">
+	<p>unión &gt; unir los buffer de escuelas y plazas</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 200px; top: 86px;" data-block-id="ae9d598bb0336c40396a57ff51b30e87"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 90%;">
+<blockquote>
+<p>La unión de capas puede darse en situaciones donde tenemos dos capas poligonales y queremos unir<br>
+los polígonos de ambas. No es necesario superposición de objetos, y en caso de que exista el<br>
+resultado de la unión tendrá limitadores que harán explícita esa situación.</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="670c2caa12a34dd5d9411bf3967e3b2a" style="min-width: 4px; min-height: 4px; width: 355px; height: 210px; left: 306px; top: 394px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="709" data-natural-height="419" data-lazy-loaded="" data-src="qgis2/b9d4ee07ab861bd19c0c2c1ae617d88a.png"></div></div></section></section><section class="stack" data-id="979f19923de0a8f872f146cde2f12754"><section data-id="fd7055026a5a1669b6dd31d857e0330d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="9537775afa688a53470300399b24c111"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Clase 2</h1>
+</div></div></section><section data-id="046d9ee1d1b965b17297954f32e1a335"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 33px; height: auto;" data-block-id="cfe5ed61b566fc4c2021c0d3419092e3"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>la clase de hoy...</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 101px; top: 140px; height: auto;" data-block-id="49bc2e5a823341e5ea6882ce94089272"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Disolver</li>
+	<li>Corte</li>
+	<li>Union por localización</li>
+	<li><span style="color:rgb(255, 255, 255); text-align:left">División de capa vectorial</span></li>
+	<li>combinación de shapes</li>
+	<li>Exportar/Añadir columnas de geometría</li>
+	<li>Calcular los centroides</li>
+	<li>Contar puntos en polígono</li>
+</ul>
+</div></div></section><section data-id="39a42c76e8e9f8b0084531f59b992897"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 9px; height: auto;" data-block-id="41305bedceca64d8fa3927294247ac76"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Análisis espacial</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 614px; height: auto;" data-block-id="7fcff0fcfddd5e63449c423273374a51"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 88%;">
+<ul>
+	<li class="fragment" data-fragment-index="0" style="color:rgb(255, 255, 255); font-size:26.4px">
+	<p><span style="font-size:26.4px; text-align:left">disolver &gt; capa de union, de la capa de </span><strong>provincias</strong><span style="font-size:26.4px; text-align:left"> a la de </span><strong>país, radios en comunas</strong></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 183px; top: 93px;" data-block-id="02095ddbb4d03d2e4c1f93b4ce190e86"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>
+<p>Disolver se aplica sobre una capa vectorial de lineas o polígonos en la que se busca que los objetos<br>
+solapados que contengan cierta característica en sus atributos se comporten como objetos únicos.</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="e59d4ca7f7f9409103a8f2e77648929d" style="min-width: 4px; min-height: 4px; width: 806px; height: 248px; left: 88px; top: 341px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="836" data-natural-height="257" data-lazy-loaded="" data-src="qgis2/fe769cca63fb07809fa76f8c6ab0e4c9.png"></div></div></section><section data-id="9b87254ed117f4a20a9c273518259d11"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 10px; height: auto;" data-block-id="9ec27d793782b11009c04722d73e13a7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Análisis espacial</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 960px; left: 0px; top: 610px; height: auto;" data-block-id="0d2bcb1d693ce0c9b98c24d8eab17b75"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0" style="color:rgb(255, 255, 255); font-size:26.4px">
+	<p><span style="color:rgb(255, 255, 255); font-size:26.4px; text-align:left">corte &gt; </span><strong>corrientes de agua de la provincia de entre ríos</strong></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 190px; top: 93px;" data-block-id="74cb4188d2f056a2ae500911c7b57a73"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>
+<p>La herramienta de corte permite recortar una capa vectorial utilizando los límites de otra capa. No<br>
+es en sí una operación entre conjuntos sino más bien solo un geoproceso.</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="5c002559b72ced6029f55f2675863c59" style="min-width: 4px; min-height: 4px; width: 806px; height: 167px; left: 74px; top: 343px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="929" data-natural-height="193" data-lazy-loaded="" data-src="qgis2/e1cfbc88d565d4bb389618297df8da45.png"></div></div></section><section data-id="7b4fa88899cd334b6b8a1d47ef82a5b2"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 13px; height: auto;" data-block-id="fb31e7881b04572f8dde9341edec6dff"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Gestión de datos</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 587px; height: auto;" data-block-id="f25e080d76460cc54efa71cbde7b1810"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>unión por localización &gt; agregar a <strong>paradas de colectivos</strong> la comuna</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 706px; left: 127px; top: 198px;" data-block-id="6e62212a9a8f9ebd109827d52a3d780e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 87%;">
+<blockquote>
+<p>La herramienta de unión de atributos por localización permite copiar los atributos de los elementos<br>
+de una capa y agregarlos a los atributos de otra capa, con la condición de que las objetos se estén<br>
+solapando geográficamente. La herramienta se ubica en el menú “Vectorial” → “Gestión de datos”<br>
+→ “Unir atributos por localización”.</p>
+</blockquote>
+</div></div></section><section data-id="5d71597fe4c6643968caa291a7eaf9d8"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 12px; height: auto;" data-block-id="7cede76d7f497879a45ffeec000000fd"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Gestión de datos</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 58px; top: 447px; height: auto;" data-block-id="73ae92a2c477a41e2255b9031d97398b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>división de capa vectorial &gt; capa de <strong>escuelas</strong> por comuna o barrio</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7b2f5a783304a54b0e3762ef5ca556a0" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 127px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>
+<p>Este proceso permite dividir una capa vectorial a partir de un atributo determinado. Su uso es muy<br>
+sencillo y solo hay que indicar la capa y el campo a utilizar para la división.</p>
+</blockquote>
+</div></div></section><section data-id="7432c64d84083de7fc379008de0de73c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="4416bd1ca03176da95b623bfcba0cb83"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Gestión de datos</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 67px; top: 517px; height: auto;" data-block-id="09e177b15fd14558ba49f5ceeeb9a649"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>combinación de shapes &gt; Unificar las capas de <strong>Departamentos por Provincia</strong> en una sola</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e87cfdb7b8c2be8ab73c9e500e0be7e8" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 160px; top: 105px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>
+<p>Dentro de la gestión de archivos shape es posible combinar o fusionar dos o más capas. La<br>
+condición general es que las capas sean del mismo tipo entre sí, punto, linea o polígono. Es posible<br>
+seleccionar los archivos shape desde una carpeta o bien elegir un directorio directamente.</p>
+</blockquote>
+</div></div></section><section data-id="e2ac0c591b58287127c79c337181f7d9"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="da2d40abafc7eecd85d4ca1d965999e7"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Geoprocesos</span></h2>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 580px; height: auto;" data-block-id="496bf04e3d51ab40dc51044eecc49d19"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Exportar/Añadir columnas de geometría a una capa de línea, una de puntos y otra de polígonos</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 96px;" data-block-id="3d04a30f6a5ae18f6c2a04d82cf5451e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 85%;">
+<blockquote>A veces es necesario añadir datos geométricos a una capa. Esta herramienta añade los campos de<br>
+geometría dependiendo del tipo de capa. Por ejemplo si elegimos una capa de puntos, se exportarán<br>
+las coordenadas X e Y (latitud y longitud); para capas de lineas se añaden datos de longitud de<br>
+polilínea; y para polígonos se agregan datos de perímetro y área.</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="49117f79e89666935409f4306e9756d4" style="min-width: 4px; min-height: 4px; width: 617px; height: 144px; left: 160px; top: 416px;"><div class="sl-block-content" style="z-index: 14;"><img data-natural-width="617" data-natural-height="144" style="" data-lazy-loaded="" data-src="qgis2/844ed4c057c2e0d3d5318b94627edfc2.png"></div></div></section><section data-id="16394031635f20ed917edf42d5f997c7"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="e49552bca2db22a2253ed1eb81c16996"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Geoprocesos</span></h2>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 64px; top: 624px; height: auto;" data-block-id="002de3b9c6d8e788b983a4cf0115ba55"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Calcular los centroides de los espacios verdes</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 105px;" data-block-id="3e37c49466dc4df3683917d241d96728"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<blockquote>Como su nombre indica, esta herramienta permite calcular los centroides (centros de gravedad) de<br>
+cada objeto de una capa vectorial poligonal. Su uso es muy simple y luego de aplicarlo generará una<br>
+capa de puntos con los atributos de los polígonos correspondientes.</blockquote>
+</div></div></section></section><section class="stack" data-id="3f0eda86dcf9c3f03d11dcb47c8551d9"><section data-id="7b96513ad909f6306c06ec3ebe68ee4d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="2657cedffe8b7508ccd585b973e69aa6"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Clase 3</h1>
+</div></div></section><section data-id="f3bea559b37ada3f53cd8d83515152ad"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 33px; height: auto;" data-block-id="5b5afef5836128e6ffdbfee830fc592a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>la clase de hoy...</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 101px; top: 140px; height: auto;" data-block-id="105a9b8fe8360d5adb7c47a63891a34a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Contar puntos en polígono</li>
+	<li>Poligonos a lineas</li>
+	<li>Lineas a poligonos</li>
+	<li>Estilos avanzados
+	<ul>
+		<li>niveles de símbolos</li>
+		<li>dimensiones por atributos</li>
+		<li>gráficos</li>
+		<li>estilos por reglas.</li>
+	</ul>
+	</li>
+</ul>
+</div></div></section><section data-id="73612ca035cf9f8769f0863635e4cf8c"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="14d7c4e231d5e3dc61eb143fd0ec0299"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Geoprocesos</span></h2>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 64px; top: 604px; height: auto;" data-block-id="88737ebf5b7375f1d9706c6f95c6c97d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Calcular cuantos centroides de espacios verdes entraron dentro de sus polígonos</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="3199adce91bc33a3aa47db085f11925a" style="min-width: 4px; min-height: 4px; width: 495px; height: 502px; left: 230px; top: 78px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="662" data-natural-height="671" data-lazy-loaded="" data-src="qgis2/b01aef21354e798f3add3f070951a1e8.png"></div></div></section><section data-id="d3c2ff7cab9e96097fbb28baa732bc7e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="238d0f50952d3a4947e9dfc9018afb7a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Geoprocesos</span></h2>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 64px; top: 624px; height: auto;" data-block-id="3b7e65c019500edcd924946e40e47cea"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Convertir los polígonos de provincias en líneas</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 105px;" data-block-id="968ec74091e1f24a5aa4fb9ba598b267"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<blockquote>La conversión de polígonos a líneas genera polilíneas cerradas para cada uno de los polígonos de la<br>
+capa de conversión. Los polilíneas contienen los atributos de los objetos originales.</blockquote>
+</div></div></section><section data-id="b0db92db13b87bbeafaa867ba251800d"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="7a74910a64412a78182e48be5fb49e8c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Geoprocesos</span></h2>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 593px; height: auto;" data-block-id="62b45cc2a526b75ffd7743255af4c7e2"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Crear una capa nueva de líneas concavas. Convertirlas a polígonos y observar el resultado</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 105px;" data-block-id="049a30f3073c0f8c077e7b135f9892a4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<blockquote>El proceso Líneas a polígonos generará un polígono por cada una de las polilíneas cóncavas (norectas)<br>
+que se encuentren en la capa original.</blockquote>
+</div></div></section><section data-id="d515709446aa934ade503a3d45742e76"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="7d34850179c30462e075ed63c6b5d61a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2><span style="color:rgb(255, 255, 255); text-align:left">Estilos: Niveles de Símbolos</span></h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 593px; height: auto;" data-block-id="2f55cd3d6eac11fd52ed8535bd9ff596"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>probar en la capa de Calles CABA, según el manual</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 160px; top: 105px;" data-block-id="bb2f3f4346bb77fc3781fef4ff84f333"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>lo que hace esta opción es determinar estratos para cada capa de símbolos, dándole a<br>
+las distintas capas un orden de renderizado determinado, según el color.</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="9592f1fd1b2dea0d67c7528b4f846b0e" style="min-width: 4px; min-height: 4px; width: 311px; height: 244px; left: 68px; top: 325px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="311" data-natural-height="244" data-lazy-loaded="" data-src="qgis2/f8b75e8f08913514a887fbc7023f3ad7.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="33a39350c2f94bb8f2bb7221d53bc548" style="min-width: 4px; min-height: 4px; width: 328px; height: 244px; left: 518px; top: 325px;"><div class="sl-block-content" style="z-index: 15;"><img data-natural-width="289" data-natural-height="215" style="" data-lazy-loaded="" data-src="qgis2/bb83d6e49f64cb4159671738b7bd864d.png"></div></div></section><section data-id="d8bed56eb1b1e6d0040358d09371fd69"><div class="sl-block" data-block-type="text" style="width: 951px; left: 5px; top: 21px; height: auto;" data-block-id="8106ce839f7f40359254f17712cf28a0"><div class="sl-block-style" style="z-index: 10; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>
+<span style="color:rgb(255, 255, 255); text-align:left">Estilos: </span>Estilos basados en reglas</h2>
+</div></div></div>
+<div class="sl-block" data-block-type="text" style="width: 903px; left: 36px; top: 514px; height: auto;" data-block-id="7b0249b811a54212f8177254e2c4a57e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>elegir un estilo para la comuna 15, nivel inicial, otro para primario y otro para la combinación.</p>
+	</li>
+	<li class="fragment" data-fragment-index="0">
+	<p>darle otro estilo al resto de las escuelas. Probar más combinaciones con otros atributos</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 852px; left: 61px; top: 125px;" data-block-id="6a70a96285fecb8dc7ba6a6ea69c2b07"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<blockquote>Qgis tiene un potente editor de estilos, en el cual podemos hacer prácticamente cualquier cosa que<br>
+se nos ocurra respecto a la salida gráfica. Eso sí, será necesario probar y probar hasta lograr el estilo<br>
+deseado. Respecto a esto, lo que nos ayudará definitivamente en nuestra búsqueda de un estilo<br>
+particular es el editor basado den reglas, el cual nos permite generar un estilo para una condición<br>
+particular.</blockquote>
+</div></div></section><section data-id="9f9bd39d5231ae164293c09dd430bb1f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="2f2f977c6b5eb078504694524078782b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>
+<span style="color:rgb(255, 255, 255); text-align:left">Estilos: </span>Dimensiones determinadas por campo</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 941px; left: 13px; top: 599px; height: auto;" data-block-id="688a53fdc1b1a5f9d86592bd3c08b1a0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Asignar ángulo de orientación a la capa de mediciones</p>
+	</li>
+	<li class="fragment" data-fragment-index="0">
+	<p>asignar grosor de línea a las corrientes de agua según ecuación</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 852px; left: 38px; top: 191px;" data-block-id="a6bea3afd6a82bc2d439a35eacaeb84e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>Los grosores de linea, o radios de puntos, generalmente se determinan a partir de un valor fijo, pero<br>
+también pueden variarse a partir de valores guardados en un campo particular de la tabla de<br>
+atributos.</blockquote>
+</div></div>
+
+</section><section data-id="53cc5ac98f74d9a02f10cc335714479e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 8px; height: auto;" data-block-id="155c17566d1e70bb5862ccd91d0ccf67"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>
+<span style="color:rgb(255, 255, 255); text-align:left">Estilos: </span>Diagramas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 941px; left: 13px; top: 599px; height: auto;" data-block-id="598c28e4a7616c0a3fdae55e67c4d8fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui">
+<ul>
+	<li class="fragment" data-fragment-index="0">
+	<p>Bajar información provincial del censo 2010. Limpiar la tabla, unir y dar estilo.</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 852px; left: 57px; top: 95px;" data-block-id="134ce94beed71194ca463e56b5a1161f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<blockquote>Permite agregar un grafico superpuesto en la capa vectorial.</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 934px; left: 13px; top: 381px;" data-block-id="0a46ad6092901ec77406526966f16d4c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p><a href="https://docs.qgis.org/2.18/es/docs/user_manual/working_with_vector/vector_properties.html#diagrams-properties" target="_blank">https://docs.qgis.org/2.18/es/docs/user_manual/working_with_vector/vector_properties.html#diagrams-properties</a></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 294px; height: 191px; left: 346px; top: 160px; min-width: 4px; min-height: 4px;" data-block-id="9a4a55c65493958a9a9a960b28db0566"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="951" data-natural-height="617" data-lazy-loaded="" data-src="qgis2/a6a4333bf865134347064384c512bf26.png"></div></div></section></section><section class="stack" data-id="2e217f4ef314ebccc4cab528a56e4ec8"><section data-id="9d57b9b5c1a50c67eef1eaf6cb883a6f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="cc60074ec545d51e29b6e18f1d05e36f"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;">
+<h1>Clase 4</h1>
+</div></div></section><section data-id="a9a81d6701fe584bcd9821e7df41a63e"><div class="sl-block" data-block-type="image" data-block-id="5e3c5bdaa6fcbc7d2b4df20710be861e" style="min-width: 4px; min-height: 4px; width: 905px; height: 272px; left: 28px; top: 186px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="719" data-natural-height="216" data-lazy-loaded="" data-src="qgis2/e3c4843c8138c07b6a4950e512f7b948.png"></div></div></section><section data-id="e34e9a3d7a508f12b23a593a881a649f"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 33px; height: auto;" data-block-id="330dff5d7a005a065fcbdbfef362e028"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Repaso</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 104px; top: 140px; height: auto;" data-block-id="60c8cf5f15e5cae3c0bd5da128cb5b93"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Elegir un tema</li>
+	<li>Generar un nuevo proyecto que combine múltiples capas (al menos 5), generando un mapa base e información temática.</li>
+	<li>Aplicar al menos 1 filtro a una de las capas</li>
+	<li>Descargar nueva información si es necesario</li>
+	<li>Aplicar al menos 2 procesos de análisis espacial, 1 de gestión de datos y 2 geoprocesos.</li>
+	<li>Darle a las capas estilos, incluyendo TODAS las herramientas que trabajamos</li>
+</ul>
+</div></div></section><section data-id="23ad822d812f868ab626014ded219566"><div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 33px; height: auto;" data-block-id="a25217ce49aff39f05d4e89fb73a9220"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Repaso</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 171px; height: auto;" data-block-id="f776430ca81ba8babb56112d8933f3c4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>Pruebas de edición</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="e5e3782b09ab69624f07c789487ce891" style="height: auto; min-width: 30px; min-height: 30px; width: 927px; left: 17px; top: 240px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 93%;">
+<p><a href="https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html?highlight=snap#automatic-tracing" target="_blank">https://docs.qgis.org/testing/en/docs/user_manual/working_with_vector/editing_geometry_attributes.html?highlight=snap#automatic-tracing</a></p>
+</div></div></section></section><section class="stack" data-id="00014f27de9ecab4e3b3e5ca94b33b6e"><section data-id="189cfd4a8681e2842cca2020eea4d8ca"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="3e49109251834a059e5bcddb87af0ffc"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui"><h1>Clase 5</h1></div></div></section><section data-id="42e4f17ce53d2f3a4dac13ccc1f10b9c"><div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 634px; height: 421px; left: 22px; top: 82px;" data-block-id="cf2f6a4f95072b170074778736e1b3d0"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="1044" data-natural-height="694" data-lazy-loaded="" data-src="qgis2/485df78d58af76b166f01c1b71009956.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 268px; left: 680px; top: 93px;" data-block-id="40f2f0ecb1103067dc3b2979f328c020"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p style="text-align:left">•<span> </span>Nombre o título. </p>
+
+<p style="text-align:left">•<span> </span>Autor. </p>
+
+<p style="text-align:left">•<span> </span>Otra información </p>
+
+<p style="text-align:left">•<span> </span>Canevás. </p>
+
+<p style="text-align:left">•<span> </span>Leyenda. Norte. </p>
+
+<p style="text-align:left">•<span> </span>Escala. </p>
+
+<p style="text-align:left">•<span> </span>Localizador. </p>
+
+<p style="text-align:left">•<span> </span>Mapas de detalle. </p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="1af2e8a7fe5a43e9797e25dbd4e558c7" style="height: auto; min-width: 30px; min-height: 30px; width: 938px; left: 11px; top: 573px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<h1 style="color:rgb(255, 255, 255)"><span style="font-size:0.7em">Composición de un mapa</span></h1>
+</div></div></section><section data-id="36241b5df0c84439a84415743e593fec"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="56ed6724b41a60b8d1090545f751d3af"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>Mapas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 799px; left: 33px; top: 192px; height: auto;" data-block-id="d10a77b800f080ffc5faf2bcfcb41cae"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li><span style="font-size:0.7em">Por descripción: son aquellos en los que abunda la información del territorio, en los que se representan cartográficamente los elementos que se encuentran presentes en el territorio, como por ejemplo, las divisiones políticas, la elevación del terreno, los ríos y espejos de agua, las localidades y sus caminos, etc.</span></li>
+	<li><span style="font-size:0.7em">Por temáticas: son aquellos mapas que expresan y desarrollan un tema en particular, generalmente sobre una mínima base cartográfica. Si se desea hacer un mapa sobre el clima, cultivos o la evolución demográfica se deberá recurrir a un tipo de mapa temático.</span></li>
+</ul>
+</div></div></section><section data-id="8b113fd50c4d577ad7bed20f7a35cf59"><div class="sl-block" data-block-type="text" style="width: 384px; left: 39px; top: 33px; height: auto;" data-block-id="eae04e17b9cddc931bdfca03f5027a15"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Mapas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 898px; left: 39px; top: 126px; height: auto;" data-block-id="ee845405e5d631ab0cc799ca66068f95"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: center; z-index: 12;">
+<blockquote>
+<p style="text-align: center;">La cuestión esencial en la elaboración de un mapa, es que la expresión gráfica debe ser clara, sin sacrificar por ello la exactitud. El mapa es un documento que tiene que ser entendido según<br>
+los propósitos que intervinieron en su preparación. Todo mapa tiene un orden jerárquico de valores, y los primarios deben destacarse por encima de los secundarios.</p>
+</blockquote>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="8e0fb7b27565189708f25116eb8f1274" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 172px; top: 448px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<blockquote>
+<p>Un mapa es un elemento de comunicación y siempre tiene un propósito.<br>
+Esto implica saber qué se quiere comunicar y cómo comunicar.</p>
+</blockquote>
+</div></div></section><section data-id="63f28a1f2623ba018e97e751efe56de0"><div class="sl-block" data-block-type="text" style="width: 384px; left: 36px; top: 15px; height: auto;" data-block-id="f1a030167d429b59fba2aa48820af12b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>Mapas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 929px; left: 16px; top: 104px; height: auto;" data-block-id="04d42ce44966265e230bea834b7789de"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11; font-size: 87%;">
+<p>1. Debe ser interpretado por un tercero. Es decir, los mapas generalmente son diseñados para que otras personas los utilicen, y que no necesariamente conocen de qué se trata; por lo tanto no es aconsejable asumir ciertas interpretaciones por parte del receptor.</p>
+
+<p><br>
+2. Tiene que tener la información justa y necesaria que permita distinguir las partes del territorio. Lo que se busca es que la cartografía permita al lector identificar elementos básicos que permitan ubicarse en el territorio, pero que a la vez no sea abrumadora al punto de pasar a tener más protagonismo que la información de la temática del mapa.</p>
+
+<p><br>
+3. Tiene que brindar información explícita sobre la temática a tratar. Se entiende con esto que debe poder interpretarse de una primer mirada sobre el mapa la información que brinda el mapa. Luego también será necesario exponer detalles de la temática del mismo, como tablas, referencias, fuentes, etc. A modo de corolario diremos también que el mapa no debe tener información “extra”, que desvirtúe la temática presentada.</p>
+</div></div></section><section data-id="f5a79688f47f622039d576d9ede1612d"><div class="sl-block" data-block-type="text" style="width: 384px; left: 36px; top: 15px; height: auto;" data-block-id="ecaf0e60684af57f69672a993669a25c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Mapas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 929px; left: 16px; top: 104px; height: auto;" data-block-id="c5c028a7f45bc721ed91fca2b7f69796"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12; font-size: 87%;">
+<p>variables visuales</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="34b093300eb666c21bffc600cc8533da" style="min-width: 4px; min-height: 4px; width: 932px; height: 231px; left: 16px; top: 189px;"><div class="sl-block-content" style="z-index: 13;"><img style="" data-natural-width="959" data-natural-height="238" data-lazy-loaded="" data-src="qgis2/033ac1c2334fa4425ee135082eb150bc.png"></div></div></section><section data-id="35183a635141b98a1dc30841f82f0fa4"><div class="sl-block" data-block-type="image" data-block-id="e4858a210417470830af34c99f04f069" style="min-width: 4px; min-height: 4px; width: 806px; height: 677px; left: 77px; top: 11px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="806" data-natural-height="677" data-lazy-loaded="" data-src="qgis2/5402b97af3241b8a721f9f4a23480ba1.png"></div></div></section><section data-id="dd539538e9623f3e91151efa6b72d421"><div class="sl-block" data-block-type="image" data-block-id="411f9f41b1c7ed2170bfac31de1b354b" style="min-width: 4px; min-height: 4px; width: 429px; height: 518px; left: 265px; top: 91px;"><div class="sl-block-content" style="z-index: 11;"><img style="" data-natural-width="984" data-natural-height="1189" data-lazy-loaded="" data-src="qgis2/ed0fcd00729b01c422f7ae87fd1c9199.png"></div></div></section></section><section class="stack" data-id="5a6da5902bc77d8001bec90a9fdb2dd7"><section data-id="813e53f698cab6ddfcb4ae730f48b6d3"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="090ce1a5e4ec3c02573b3a30ce5d50d0"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>Clase 6</h1>
+</div></div></section><section data-id="bcb46a19a0dbcd6bfe6b7730b098f233"><div class="sl-block" data-block-type="text" style="width: 767px; left: 49px; top: 66px; height: auto;" data-block-id="2a827146aecf2bdb23c05260e46deb41"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>Normalización de Tablas de INDEC</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 799px; left: 49px; top: 239px; height: auto;" data-block-id="86cdb802667aa3f8e99b8c06193a60b7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<ul>
+	<li><span style="font-size:0.7em">Agregar el cero a la izquierda para los códigos identificatorios de datos de Ciudad de Buenos Aires (02) y Provincia de Buenos Aires (06)</span></li>
+	<li><span style="font-size:0.7em">Para que la columna con los códigos se mantenga cómo texto, darle formato de texto en excel y agregarle a la última fila de esa columna alguna letra, para que su contenido no sea únicamente númerico.</span></li>
+	<li><span style="font-size:0.7em">Eliminar todas las celdas con información extra</span></li>
+	<li><span style="font-size:0.7em">Los nombres de las columnas deben ser de no mas de 8 caracteres, no deben comenzar con número ni contener caracteres especiales cómo acentos, espacios, ñ, ninguno de los que se seleccionan con shift. Únicamente el guión bajo es permitido</span></li>
+</ul>
+</div></div></section></section><section class="stack" data-id="f9c6c3c40447b28af766e45f700e581a"><section data-id="a8ca8168e8f245dff1dc64f3f82690d5"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="417fb4d3ec2cf374ddcf36f1362c7a7d"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>Clase 7</h1>
+</div></div></section><section data-id="bfaff5b1b1c517337a5fc716c515159c"><div class="sl-block" data-block-type="text" style="width: 384px; left: 37px; top: 17px; height: auto;" data-block-id="5a4b8d61dd43feb4df8d82eccfeb8a1b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Cartogramas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 850px; left: 30px; top: 91px; height: auto;" data-block-id="6c7ecf65ddd44fa89252b3594b129a0b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
+<p>Los cartogramas son, según la Wikipedia, «un mapa o diagrama que muestra datos de cantidad asociados a sus respectivas áreas, mediante la modificación de los tamaños de las unidades de enumeración». Valga esta primera definición, genérica, para ponernos sobre la pista.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="61f5fbfa08112150f0d5da571ed1693d" style="height: auto; min-width: 30px; min-height: 30px; width: 904px; left: 37px; top: 641px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>https://www.unigis.es/crear-cartogramas-qgis/</p>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="5d4b62793ccb2089afdcb63ae504f4eb" style="min-width: 4px; min-height: 4px; width: 564px; height: 345px; left: 156px; top: 296px;"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="649" data-natural-height="397" data-lazy-loaded="" data-src="qgis2/0468a5d8d95ca53db431fec50bf19186.png"></div></div></section><section data-id="a46b7c07b0f732c56151590836fd29c0"><div class="sl-block" data-block-type="text" style="width: 384px; left: 48px; top: 105px; height: auto;" data-block-id="438abb9a77e6e07fc378cdd31c4fc344"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 11;">
+<h2>Cartogramas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 850px; left: 37px; top: 222px; height: auto;" data-block-id="dad1473e325479bd047cd603636f2d29"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 12;">
+<p>Usando el plugin cartogram3, se pueden hacer en QGIS en pocos clicks.</p>
+
+<p> </p>
+
+<p>A menos iteraciones, menos deformación, dependiendo de la diferencia en los datos.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="8b629e4aedb7fc17166a495441b98f95" style="height: auto; min-width: 30px; min-height: 30px; width: 913px; left: 6px; top: 639px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>http://www.cursosgis.com/como-hacer-cartogramas-con-qgis/</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="dff09001d9d4a1a316a2783cf011efcb" style="height: auto; min-width: 30px; min-height: 30px; width: 522px; left: 27px; top: 554px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p>ejemplos: https://worldmapper.org/</p>
+
+<p>http://scapetoad.choros.ch/</p>
+</div></div></section><section data-id="86802781862d5e31cbc36140551e3762"><div class="sl-block" data-block-type="text" style="width: 384px; left: 24px; top: 11px; height: auto;" data-block-id="87e58f7e5f116a300abeb12ee782f3d9"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="text-align: left; z-index: 10;">
+<h2>3D</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 850px; left: 55px; top: 70px; height: auto;" data-block-id="a39f7d36b0ef3c5ce82c4fd38282b6f7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin urna odio, aliquam vulputate faucibus id, elementum lobortis felis. Mauris urna dolor, placerat ac sagittis quis." style="text-align: left; z-index: 11;">
+<p>Plugin qgis2threejs</p>
+
+<p> </p>
+
+<p>https://carto.com/blog/eighty-data-visualizations-examples-using-location-data-maps/</p>
+
+<p> </p>
+
+<p>https://parallel.co.uk/3D/laei-no2/#13.74/51.49701/-0.16091/124.8/39</p>
+
+<p> </p>
+
+<p>https://datosgobar.github.io/densidad-poblacion/#inicio</p>
+
+<p>https://docs.mapbox.com/mapbox-gl-js/example/dancing-buildings/</p>
+
+<p> </p>
+
+<p>http://spatialgalaxy.net/2019/01/23/two-weeks-of-leaflet-day-1/</p>
+</div></div>
+
+</section></section><section class="stack" data-id="1ddb9d5fd5c5ebb89e1b6f1a4ca5c0d2"><section data-id="93e088e0787eda64f42294f959e67664"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="843f93e5b8c2cfb728f64eca72bb3378"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>Clase 8</h1>
+</div></div></section><section data-id="e7da28cd6e4c877c5747ce75cbdfeb65"><div class="sl-block" data-block-type="text" style="width: 803px; left: 80px; top: 9px; height: auto;" data-block-id="bdecb6bd7bc18e2b55d913f6f1a250ce"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Normalización de tablas y geocodificación</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="0d42e3ae00b5bcd7aa93e73ccd269fce" style="height: auto; min-width: 30px; min-height: 30px; width: 883px; left: 47px; top: 163px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: justify;">
+<p>La geocodificación es el proceso de asignar coordenadas geográficas a puntos del mapa, es decir, la ubicación en el espacio de una dirección. Por ejemplo, si tenemos un listado de direcciones en formato alfanumérico (tipo y nombre de la calle, número, ciudad, provincia y país) se podrán localizar espacialmente en función de los criterios del software utilizado.</p>
+
+<p>La geocodifcación inversa consiste en asignar la dirección de una calle, número de portal, etc a una localización espacial conocida. Por ejemplo, en una capa de puntos podremos rellenar en su tabla de atributos un campo nuevo con sus direcciones.</p>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="c812dd34cdcc0130609446f61fa1b754" style="height: auto; min-width: 30px; min-height: 30px; width: 840px; left: 40px; top: 650px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(74, 134, 232);">
+<p>https://mappinggis.com/2015/07/geocodificacion-en-gis/</p>
+</div></div></section><section data-id="7484b05d0aa5f97f4f03145b59cc0838"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 70px; height: auto;" data-block-id="86b3984a20fa21002b015f848b28a896"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Opciones de geocoding de Direcciones</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 910px; left: 24px; top: 303px; height: auto;" data-block-id="cdce8eeabd7bbfede303a4028a82ab6e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;" dir="ui"><ul>
+<li>https://mappinggis.com/2015/07/geocodificacion-en-gis/</li>
+<li>https://opencagedata.com/tutorials/geocode-in-googledocs</li>
+</ul></div></div></section></section><section class="stack" data-id="80961f97280b673c3964f72b2992ca74"><section data-id="659781eeb17918e607efc36ea57b5528"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="ef9bc8530bf70f44c985f83d4aa6febd"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>Clase 9</h1>
+</div></div></section><section data-id="dfae763e285e7276c681332f4602146e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 70px; height: auto;" data-block-id="f637fdec8be9ec06245eca38bd9fbb9c"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Geocoding de medidas</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 263px; height: auto;" data-block-id="57248690fa78efe24a2ced5f24e9052d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>LRS</li>
+</ul>
+</div></div></section><section data-id="6adb23efed8361618ff2c9a4104d20fe"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 10px; height: auto;" data-block-id="af2c94845370578379df2815896a053d"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Calidad de datos</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 91px; height: auto;" data-block-id="67227e196e1c4dda38a484b7c18af13c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<p>La preocupación por la calidad de los datos es básica por el simple hecho de que datos de mala calidad generan invariablemente resultados de mala calidad. Utilizar un dato de mala calidad es equivalente a utilizar un modelo equivocado. Si el modelo no es cierto, no importa la buena calidad de los datos, ya que los resultados que arrojará tampoco lo serán. Del mismo modo, un dato con un error superior al que puede resultar tolerable para una determinada tarea hace que la calidad de este sea insuficiente, y los resultados obtenidos carecen de valor.</p>
+
+<p> </p>
+
+<p>Un elemento clave para el control de la calidad es la existencia de metadatos, que informan acerca de dichos datos sobre una serie de aspectos relativos a estos, entre ellos aquellos que afectan a la calidad.</p>
+</div></div></section><section data-id="45f60595e503f9f79e021bda80992291"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 10px; height: auto;" data-block-id="5694168e9f4be6f6f664344a5b15fb09"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Calidad de datos</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 806px; left: 74px; top: 484px; height: auto;" data-block-id="96736c71b2929ebd67020d81be9f34d1"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<p>Diferencia entre precisión y exactitud</p>
+
+<p>En a) y b) la precisión es elevada, mientras que en c) y d) es baja. Por su parte, en a) y c) la exactitud es baja, siendo alta en b) y d).</p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 423px; height: 349px; left: 266px; top: 115px;" data-block-id="10a27b5709c45e366fd8a28482ae6b36"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="843" data-natural-height="695" style="" data-lazy-loaded="" data-src="qgis2/75954930b3c83a6341d8a311801b05ee.png"></div></div></section><section data-id="d2ce12983de1bd89ee34840466b61b69"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 10px; height: auto;" data-block-id="fce953fb5bd927e945cfb18b50494c9b"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Calidad de datos</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 423px; height: 349px; left: 266px; top: 115px; min-width: 4px; min-height: 4px;" data-block-id="e132053bdf5c285b5faec97807a2555e"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="843" data-natural-height="695" style="" data-lazy-loaded="" data-src="qgis2/75954930b3c83a6341d8a311801b05ee.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 948px; left: 12px; top: 493px;" data-block-id="c908f67d10fa995d2160d95fd20d8524"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13;">
+<p>La precisión indica el nivel de detalle con el que se recoge la información. Un capa en la que las posiciones se han medido con 5 valores decimales es más precisa que una en la que se han medido con un único decimal.</p>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="11e2f7fe5cda2bb43855bd1290944094" style="min-width: 4px; min-height: 4px; width: 473px; height: 175px; left: 240px; top: 105px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 14;" data-shape-stroke-color="#980000" data-shape-stroke-width="7px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 473 175"><defs><clippath id="shape-mask-1-1550165359149"><rect width="473" height="175" rx="0" ry="0"></rect></clippath></defs><rect width="473" height="175" rx="0" ry="0" clip-path="url(#shape-mask-1-1550165359149)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#980000" stroke-width="14"></rect></svg></div></div></section><section data-id="668629af5d99f0861c2abc04576d8b82"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 10px; height: auto;" data-block-id="d8355cfd7d22ef8aa2750b685d4ea2ba"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Calidad de datos</h2>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 423px; height: 349px; left: 266px; top: 115px; min-width: 4px; min-height: 4px;" data-block-id="d042f5952f8bf6dab33a12f6024a520e"><div class="sl-block-content" style="z-index: 11;"><img data-natural-width="843" data-natural-height="695" style="" data-lazy-loaded="" data-src="qgis2/75954930b3c83a6341d8a311801b05ee.png"></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 367px; height: 246px; left: 418px; top: 166px;" data-block-id="aa6b785d5de00d83f452d198df7aa858"><div class="sl-block-style" style="z-index: 12; transform: rotate(90deg);"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 12;" data-shape-stroke-color="#980000" data-shape-stroke-width="7px"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 367 246"><defs><clippath id="shape-mask-2-1550165408855"><rect width="367" height="246" rx="0" ry="0"></rect></clippath></defs><rect width="367" height="246" rx="0" ry="0" clip-path="url(#shape-mask-2-1550165408855)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#980000" stroke-width="14"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 948px; left: 5px; top: 479px;" data-block-id="f4058c018178e7ec502efc2361223a70"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; line-height: 0.884; font-size: 98%;" data-has-line-height="">
+<p><span style="font-size:0.7em">Por su parte, la exactitud nos indica el grado en que los valores estimados se asemejan al valor real.</span></p>
+
+<p><span style="font-size:0.7em">La exactitud se calcula con el error sistemático, mientras que la precisión se calcula a partir del error aleatorio. Existe una relación directa entre precisión y exactitud, y en ocasiones se emplean ambos términos indistintamente. Si no existen errores sistemáticos (no existe un sesgo), la precisión y la exactitud son iguales.</span></p>
+
+<p><span style="font-size:0.7em">Es posible, no obstante, que un dato sea muy preciso pero poco exacto, ya que las magnitudes de los distintos tipos de errores pueden ser muy distintas.</span></p>
+</div></div></section><section data-id="207b59bb7a1158d71dc26b5405f90db3"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 10px; height: auto;" data-block-id="89f534d7ba1a3e4d8e75664dbfc4594a"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Calidad de datos</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 948px; left: 12px; top: 115px;" data-block-id="1b16e35638ce726fa3be62e364ba81b8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; line-height: 1.274; font-size: 103%;" data-has-line-height="" dir="ui">
+<ul style="font-size:16.8px">
+	<li style="font-size:16.8px"><span style="font-size:1.8em">Exactitud posicional. </span></li>
+	<li style="font-size:16.8px"><span style="font-size:1.8em">Exactitud en los atributos. </span></li>
+	<li style="font-size:16.8px"><span style="font-size:1.8em">Consistencia lógica y coherencia topológica. </span></li>
+	<li style="font-size:16.8px"><span style="font-size:1.8em">Compleción. </span></li>
+	<li style="font-size:16.8px"><span style="font-size:1.8em">Calidad temporal. </span></li>
+	<li style="font-size:16.8px"><span style="font-size:1.8em">Procedencia. </span></li>
+</ul>
+</div></div></section><section data-id="b3a5ca29d8f30f54e5a5112008f8d893"><div class="sl-block" data-block-type="text" style="width: 806px; left: 80px; top: 10px; height: auto;" data-block-id="ae26b534367a0ba897c635c0a3738789"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Coherencia topológica</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 948px; left: 7px; top: 84px;" data-block-id="a2f4e30f59486dcb38fbd79c75ec1bc7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; line-height: 1.378; font-size: 125%;" data-has-line-height="" dir="ui">
+<p style="font-size:16.8px"><span style="font-size:1.6em">Los datos espaciales no son elementos independientes, sino que existen relaciones entre ellos. Un dato de calidad debe recoger fielmente estas relaciones, siendo la topología la encargada de reflejar este tipo de información. Por ello, debe existir una coherencia topológica en el dato espacial.​ </span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="width: 280px; height: 320px; left: 341px; top: 280px; min-width: 4px; min-height: 4px;" data-block-id="6837b0a491e07291df426ade6a808631"><div class="sl-block-content" style="z-index: 13;"><img data-natural-width="280" data-natural-height="320" style="" data-lazy-loaded="" data-src="qgis2/46756fc5e1ff2510da89bd182a3ddc9b.gif"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d8ec7c151170d981fe1d1b41b2d43142" style="height: auto; min-width: 30px; min-height: 30px; width: 948px; left: 9px; top: 608px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14;">
+<p><span style="font-size:0.7em">https://forestryqgis.blogspot.com/2018/03/la-topologia-en-los-gis.html</span></p>
+
+<p><span style="font-size:0.7em">https://mappinggis.com/2015/03/correccion-de-topologia-en-qgis/</span></p>
+</div></div></section><section data-id="2972c2e36e336888b533dd86bc8f38aa"><div class="sl-block" data-block-type="text" data-block-id="991b5bd67a7a32191aeb50ce967dbb18" style="height: auto; min-width: 30px; min-height: 30px; width: 918px; left: 32px; top: 63px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>Los edificios no deben de solaparse entre ellos</li>
+	<li>Los edificios no deben de presentar geometrías duplicadas.</li>
+	<li>La senda ha de comunicar los edificios y no debe tener nodos colgados o “desconectados”.</li>
+	<li>Dentro de cada edificio ha de existir un punto de información.</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="d9eb94d24c2b518c2e5df3b542a5dca5" style="height: auto; min-width: 30px; min-height: 30px; width: 929px; left: 21px; top: 370px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12;">
+<ul>
+	<li>puntos_información Must Be Inside /Debe estar dentro de edificios.</li>
+	<li>edificios Must Not Overlap/No debe superponerse.</li>
+	<li>edificios Must Not Have Duplicates/No debe tener duplicados.</li>
+	<li>senda Must Not Have Gaps/No debe tener extremos sueltos</li>
+</ul>
+</div></div></section></section><section class="stack" data-id="114d3e2d06b9a32edfe627b1ad946c02"><section data-id="0837dbc71ae84b7abea56692abdf045e"><div class="sl-block" data-block-type="text" style="width: 806px; left: 77px; top: 266px; height: auto;" data-block-id="de95e0d4c07d4042740e1228f196978e"><div class="sl-block-content" data-placeholder-tag="h1" data-placeholder-text="Title Text" style="z-index: 10;" dir="ui">
+<h1>Clase 10</h1>
+</div></div></section><section data-id="79163e87dcef125040c306c4064f9fd8"><div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;" data-block-id="89bec6941516ca0ae5419a8b0e489a62"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 11;">
+<h2>Model Builder</h2>
+
+<p> </p>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 178px; height: auto;" data-block-id="41ed1e11bcbf40a73b12f3323bc41f40"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; font-size: 78%;">
+<p>Crear un modelo requiere dos pasos:</p>
+
+<ol>
+	<li>“Definición de entradas no necesarias”. Estas entradas se agregaran a la ventana de parámetros, asi el usuario puede poner sus valores cuando se ejecutan los modelos. El modelo en si es un algoritmo, asi la ventana de parámetros de genera automáticamente como pasa con todos los algoritmos disponibles en el marco de referencia del procesador.</li>
+	<li>“Definición de un flujo de trabajo”. Usando los datos entrantes de un modelo, el flujo de trabajo se define por algoritmos adicionales y seleccionando como se utilizan las entradas o salidas generados por otros almoritmos que ya estan en el modelo.</li>
+</ol>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="f4324fbbe349b09c1e25b3eefd90721b" style="height: auto; min-width: 30px; min-height: 30px; width: 905px; left: 16px; top: 591px;"><div class="sl-block-style" style="z-index: 13; transform: rotate(360deg);"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; font-size: 67%;">
+<p><a href="https://docs.qgis.org/testing/en/docs/user_manual/processing/modeler.html" target="_blank">https://docs.qgis.org/testing/en/docs/user_manual/processing/modeler.html</a></p>
+</div></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7c1fa120796d9d29b00f625a9aace144" style="height: auto; min-width: 30px; min-height: 30px; width: 766px; left: 80px; top: 630px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; font-size: 67%;">
+<p><a href="http://millermountain.com/geospatialblog/2017/12/05/graphical-modeler/" target="_blank">http://millermountain.com/geospatialblog/2017/12/05/graphical-modeler/</a></p>
+</div></div></section></section><section data-id="8c857654f19f8531f7c6bdc063e087da"><div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 189px; height: auto;" data-block-id="e1bbadbceca146b90b935181f2ed05aa"><div class="sl-block-content" data-placeholder-tag="h2" data-placeholder-text="Title Text" style="z-index: 10;">
+<h2>Link</h2>
+</div></div>
+<div class="sl-block" data-block-type="text" style="width: 807px; left: 77px; top: 263px; height: auto;" data-block-id="7736bdcfffd25a5e231167af17b4ff18"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11;">
+<ul>
+	<li>https://mappinggis.com/2018/03/como-anadir-mapas-base-en-qgis-3-0-openstreetmap-google-carto-stamen/ </li>
+	<li> </li>
+</ul>
+</div></div></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1411584,"slug":"qgis2","title":"Transporte Qgis intermedio","description":"Transporte Qgis intermedio","width":960,"height":700,"visibility":"all","published_at":"2019-01-15T11:23:27.010Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/b507dce6d7e6bf03a7d9089eb99d04ba/thumb.jpg?1547551424","view_count":208,"user":{"id":25580,"username":"malena_libman","name":"Malena Libman","description":"","thumbnail_url":"https://www.gravatar.com/avatar/b90b8cb00482072cfae6bd9165fcace5?s=140\u0026d=https%3A%2F%2Fstatic.slid.es%2Fimages%2Fdefault-profile-picture.png","paid":true,"pro":false,"lite":true,"team_id":null,"settings":{"id":25900,"present_controls":true,"present_upsizing":true,"present_pointer":false,"present_notes":false,"default_deck_tag_id":null}},"background_transition":"convex","transition":"default","theme_id":null,"theme_font":"montserrat","theme_color":"asphalt-orange","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":true,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":false,"slide_count":73,"rtl":false,"version":2,"collaborative":null,"deck_user_editor_limit":1,"data_updated_at":1550611267426,"font_typekit":null,"font_google":null,"time_limit":null,"upsizing_enabled":null,"notes":{"a1b306b1b75a1b8caea5c45f15ab0c6c":"","b52aa97448725efa3f41d414656b7587":"","1d334dc04c39de7a395c1e0899dfe6c1":"","79ec9c4134e04ce1feb4ebf365276b22":"","2496aacb5abd892ea77603f6438f18a4":"","7b4fa88899cd334b6b8a1d47ef82a5b2":"","0d69fa2202bae609259a1c5bc764ef2e":"","fb6dad5d2369bb95f997598880f328e5":"","04c75f296a4f33a88fe01be3ce04d881":"","cdcceae1ccad58821befd7dec4eb4242":"","e590330afb12f27d8a63460db9090cbb":"","1984cba55035beef8b7a650efe02274b":"","72b3996f04a262a3fd8ffdfefad387b4":"","39a42c76e8e9f8b0084531f59b992897":"","9b87254ed117f4a20a9c273518259d11":"","5d71597fe4c6643968caa291a7eaf9d8":"","7432c64d84083de7fc379008de0de73c":"","fd7055026a5a1669b6dd31d857e0330d":""}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 960,
+				height: 700,
+				margin: 0.05,
+				maxScale: 1,
+
+				hash: true,
+				controls: true,
+				progress: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: false,
+
+				autoSlide: 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "default",
+				backgroundTransition: "convex",
+
+				highlight: {
+					escapeHTML: false
+				},
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js' },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/reveal-plugins/zoom/zoom.js', async: true }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
